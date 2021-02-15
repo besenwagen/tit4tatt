@@ -1,0 +1,19 @@
+{
+  "name": "tit4tatt",
+  "version": "1.0.0",
+  "license": "AGPL-3.0-or-later",
+  "description": "tit4tatt all the things",
+  "author": {
+    "name": "Eric Bednarz",
+    "url": "https://eric.bednarz.dev"
+  },
+  "bin": "./source/cli.js",
+  "main": "./source/test.js",
+  "scripts": {
+    "prepack": "node ./source/fetch.js"
+  },
+  "peerDependencies": {
+    "esm": "^3.2.25",
+    "module-alias": "^2.2.2"
+  }
+}
