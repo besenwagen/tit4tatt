@@ -8,7 +8,11 @@ import { io_factory, load } from './test-io.js';
 
 const { argv, cwd, exit } = process;
 
-const PATTERN = '**/*.test.js';
+const pattern = '**/*.test.js';
+const ignore = '**/node_modules/**';
+const options = {
+  ignore,
+};
 const pwd = cwd();
 
 const is_argument = value =>
@@ -29,7 +33,7 @@ const {
   silent,
 });
 
-find(PATTERN)
+find(pattern, options)
   .then(on_glob_resolved)
   .then(load)
   .then(on_suites_resolved)
