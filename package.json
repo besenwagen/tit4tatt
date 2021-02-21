@@ -1,6 +1,6 @@
 {
   "name": "tit4tatt",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "license": "AGPL-3.0-or-later",
   "description": "tit4tatt all the things",
   "author": {
@@ -12,7 +12,7 @@
   "scripts": {
     "prepack": "node ./source/fetch.js"
   },
-  "peerDependencies": {
+  "dependencies": {
     "esm": "^3.2.25",
     "module-alias": "^2.2.2"
   }

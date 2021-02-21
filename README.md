@@ -14,15 +14,6 @@
 npm install tit4tatt
 ```
 
-#### Peer dependencies
-
-- [esm](https://www.npmjs.com/package/esm)
-- [module-alias](https://www.npmjs.com/package/module-alias)
-
-```bash
-npm install esm module-alias
-```
-
 ### Configuration
 
 Add aliases that match your project's bundler in `package.json`:
